@@ -13,6 +13,10 @@ body{
 	color: white;
 	opacity: 0.8;
 }
+[href] {
+	text-decoration: none;
+	color: white;
+}
 nav{
 	text-align: right;
 }
@@ -33,7 +37,6 @@ li:last-child{
 }
 nav ul li a{
 	text-shadow: 2px 2px 4px white;
-	text-decoration: none;
 	color: white;
 }
 .menu {
@@ -139,4 +142,5 @@ img {
 ol li, p, figcaption{
 	font-size: 90%;
 }
+
 
