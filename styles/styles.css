@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 1430px;
+	padding: 20px;
+	background-image: url("https://top-fon.com/uploads/posts/2022-09/1663861921_23-top-fon-com-p-fon-dlya-bannera-serii-foto-28.png");
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	opacity: 0.8;
+}
+nav{
+	text-align: right;
+}
+.about{
+	margin: 150px 250px 80px 250px;
+}
+li{
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid white;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+li:last-child{
+  border-right: none;
+}
+nav ul li a{
+	text-shadow: 2px 2px 4px white;
+	text-decoration: none;
+	color: white;
+}
+.menu {
+	font-size: 20px;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	padding-top: 50px;
+	font-size: 16px;
+}
+img {
+	width:25px ;
+	filter: invert(1);
+}
+.kitten{
+	width: 250px;
+	display: block;
+	float: left;
+	padding-right: 20px;
+}
+.about p{
+	display: block;
+	font-size: 18px;
+	margin-top: 10px;
+}
+.text{
+	columns: 4;
+	column-gap: 50px;
+	column-rule: 1px solid white;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	width: 1300px;
+	column-fill: auto;
+}
+.text, .block2 h3{
+	border: 1px solid white;
+	border-bottom-right-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+}
+.text span{
+	display: block;
+	text-align: center;
+}
+.text h2{
+	padding: 15px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px solid white;
+	column-span: all;
+}
+.text p{
+	break-inside: avoid;
+}
+.resume-text{
+	margin-top: 70px;
+}
+.resume-img{
+	width: 40px;
+	display: block;
+	float: left;
+	margin-left: 200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 600px;
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {
+  padding: 10px; 
+}
+.grid-item1, .grid-item5{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.grid-item2, .grid-item6{
+  margin-top: 10px;
+}
+.grid-item3, .grid-item7{
+}
+.grid-item4, .grid-item8{
+  border-left: 1px solid white;
+  margin-bottom: 30px;
+}
+.resume-text h3{
+	border-bottom: 1px solid white;
+	margin: 10px 250px 10px 250px;
+}
+.block2{
+	text-align: center;
+}
+.block2 h3{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding:20px;
+}
+ol li, p, figcaption{
+	font-size: 90%;
+}
+
