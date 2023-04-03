@@ -1,63 +1,92 @@
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body{
-/*	background-color: brown;*/
+	background: rgb(54,46,44);
+	background: linear-gradient(90deg, rgba(54,46,44,1) 17%, rgba(68,55,49,1) 47%, rgba(64,53,51,1) 100%);
 }
 .main{
 	width: 940px;
 	height: 390px;
-	background-color: pink;
-	margin: 20px auto;
+	margin: 100px auto;
+	text-align: center;
+	font-family: serif;
+	font-size: 18px;
+	position: relative;
 }
 .wrapper{
 	width: 330px;
 	height: 390px;
+	text-transform: uppercase;
 	float: left;
+	position: relative;
 	background-image: url("https://northcarolinablueberries.com/wp-content/uploads/2014/02/BC-69-Blueberry-Turkey-Burger-300x400.jpg");
 }
-
-
+.wrapper-title{
+	width: 335px;
+	height: 210px;
+	padding: 50px 20px;
+	background-color: black;
+	font-size: 44px;
+	font-weight: bold;
+	line-height: 34px;
+	color: whitesmoke;
+	position: absolute;
+	left: -8px;
+	top: 154px;
+}
+.button{
+	background-color: black;
+	color: whitesmoke;
+	font-weight: bold;
+	width: 175px;
+	padding: 20px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 405px;
+	right: 0;
+}
 .aside{
-
 	width: 610px;
 	height: 390px;
 	float: right;
 	background-color: whitesmoke;
-	text-align: center;
 	padding: 40px;
 }
-.content{
+.menu{
 	width: 530px;
 	display: flex;
 	flex-flow: wrap;
-	justify-content: space-between;
-
-}
-.content{
 	margin-top: 30px;
-
+	justify-content: space-between;
 }
-.desc{
+.item{
 	width: 40%;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #d8d8d8;
 	margin: 0 20px;
 	padding: 20px;
 	position: relative;
 }
-.desc:before{
+.item:before{
 	content:" ";
 	width: 10px;
 	height: 10px;
-	background-color: grey;
+	background-color: #d8d8d8;
 	transform: rotate(45deg);
 	position: absolute;
 	left: 50%;
 	top: 95%;
 }
-
+.wrapper-subtitle{
+	font-size: 15px;
+}
+.wrapper-span{
+	color: #e2ce35;
+}
 span{
 	color: gray;
+	text-transform: uppercase;
 }
