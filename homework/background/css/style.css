@@ -96,7 +96,9 @@ li{
 	text-transform: uppercase;
 	padding: 20px;
 }
-
+li:hover{
+	background-color: red;
+}
 /* Tour */
 
 #tour,#gallery{
