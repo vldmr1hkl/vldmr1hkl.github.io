@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Headbanger Highlight';
+    src: url('Headbanger-Highlight.eot');
+    src: local('Headbanger Highlight'), local('Headbanger-Highlight'),
+        url('Headbanger-Highlight.eot?#iefix') format('embedded-opentype'),
+        url('Headbanger-Highlight.woff2') format('woff2'),
+        url('Headbanger-Highlight.woff') format('woff'),
+        url('Headbanger-Highlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Headbanger';
+    src: url('Headbanger-Regular.eot');
+    src: local('Headbanger Regular'), local('Headbanger-Regular'),
+        url('Headbanger-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Headbanger-Regular.woff2') format('woff2'),
+        url('Headbanger-Regular.woff') format('woff'),
+        url('Headbanger-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Headbanger Midtone';
+    src: url('Headbanger-Midtone.eot');
+    src: local('Headbanger Midtone'), local('Headbanger-Midtone'),
+        url('Headbanger-Midtone.eot?#iefix') format('embedded-opentype'),
+        url('Headbanger-Midtone.woff2') format('woff2'),
+        url('Headbanger-Midtone.woff') format('woff'),
+        url('Headbanger-Midtone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
