@@ -15,7 +15,7 @@
 	height: 66px;
 	border-radius: 50%;
 	background-color: var(--brand-color);
-	background-image: url('../img/play.svg');
+	background-image: url('../img/video/play.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
@@ -36,13 +36,13 @@
 	margin-top: 100px;
 }
 .card_1{
-	background-image: url('../img/Bg.png');
+	background-image: url('../img/features/Bg.png');
 }
 .card_2{
-	background-image: url('../img/Bg-2.png');
+	background-image: url('../img/features/Bg-2.png');
 }
 .card_3{
-	background-image: url('../img/Bg-3.png');
+	background-image: url('../img/features/Bg-3.png');
 }
 .card_bg{
 	width: 350px;

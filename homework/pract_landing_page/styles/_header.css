@@ -6,7 +6,7 @@
 	/*align-items: center;*/
 	min-height: 100vh;
 	background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
-				url('../img/main-bg.png');
+				url('../img/header/main-bg.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -137,7 +137,7 @@
 		height: 32px;
 		margin-right: 11px;
 		border-radius: 50%;
-		background-image: url(../img/flag.png);
+		background-image: url(../img/header/flag.png);
 	}
 
 	.r-side .lang-switch .lang-switch-title {
