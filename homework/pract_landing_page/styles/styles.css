@@ -426,6 +426,7 @@ form{
 }
 select{
 	-webkit-appearance: none;
+	background-color: white;
 }
 .username{
 	justify-content: space-between;
