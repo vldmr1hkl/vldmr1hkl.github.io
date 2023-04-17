@@ -44,6 +44,11 @@ section, footer{
 	max-width: 445px;
 	margin-right: 125px;
 }
+p{
+	text-align: justify;
+	font-size: 0.875rem;
+	margin-bottom: 24px;
+}
 .content-wrap {
 	padding: 0 15px;
 }
@@ -286,7 +291,7 @@ section, footer{
 }
 @media(max-width:768px){
 	.video img{
-		width: 340px;
+		max-width: 100%;
 	}
 	.btn-play{
 		left: calc(50% - 33px);
@@ -416,9 +421,18 @@ section, footer{
 	padding-top: 117px;
 	padding-bottom: 78px;
 }
+form{
+	min-width: 350px;
+}
+select{
+	-webkit-appearance: none;
+}
 .username{
 	justify-content: space-between;
 	width: 100%;
+}
+input::placeholder{
+	color: rgba(19, 39, 67, 0.5);
 }
 .first_name, .last_name{
 	width: 48%;
