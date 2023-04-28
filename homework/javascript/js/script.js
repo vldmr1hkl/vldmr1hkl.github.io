@@ -6,4 +6,15 @@ while(isNaN(userAge)){
 };
 userAge = Number(userAge);
 let userAgeIn5year = 5 + userAge;
-content.innerHTML = "Hello, " +userName+ "! In 5 years you will be " +userAgeIn5year+ " years old!";
+function check(userAgeIn5year){
+	if(userAgeIn5year<60){
+		content.innerHTML="Hello, " +userName+ "! In 5 years you will be " +userAgeIn5year+ " years old!";
+	}else if(userAgeIn5year>60){
+		content.innerHTML="Sorry " +userName+ ", it's time to retire";
+	};
+	return(userAge);
+};
+// content.innerHTML = "Hello, " +userName+ "! In 5 years you will be " +userAgeIn5year+ " years old!";
+
+
+check(userAgeIn5year);
