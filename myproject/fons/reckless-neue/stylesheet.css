@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Reckless Neue';
+    src: url('../fons/neue-montreal/reckless-neue/RecklessNeue-RegularItalic.eot');
+    src: local('Reckless Neue Regular Italic'), local('RecklessNeue-RegularItalic'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-RegularItalic.woff2') format('woff2'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-RegularItalic.woff') format('woff'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Reckless Neue';
+    src: url('../fons/neue-montreal/reckless-neue/RecklessNeue-Regular.eot');
+    src: local('Reckless Neue Regular'), local('RecklessNeue-Regular'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Regular.woff2') format('woff2'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Regular.woff') format('woff'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Reckless Neue';
+    src: url('../fons/neue-montreal/reckless-neue/RecklessNeue-Bold.eot');
+    src: local('Reckless Neue Bold'), local('RecklessNeue-Bold'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Bold.woff2') format('woff2'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Bold.woff') format('woff'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Reckless Neue';
+    src: url('../fons/neue-montreal/reckless-neue/RecklessNeue-BoldItalic.eot');
+    src: local('Reckless Neue Bold Italic'), local('RecklessNeue-BoldItalic'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-BoldItalic.woff2') format('woff2'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-BoldItalic.woff') format('woff'),
+        url('../fons/neue-montreal/reckless-neue/RecklessNeue-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
