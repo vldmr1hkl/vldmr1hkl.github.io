@@ -12,42 +12,67 @@
 </head>
 <body>
 	<header class="d-flex bg">
-		<div class="header__top-bar">
-			<div class="top-bar-left">
-				<!-- <div class="header__burger">
-					<span></span>
-				</div> -->
-				<nav class="header__menu">
-						<!-- <ul class="header__list">
-							<li>
-								<a href="#" class="header__link">home</a>
-							</li>
-							<li>
-								<a href="#" class="header__link">home</a>
-							</li>
-							<li>
-								<a href="#" class="header__link">home</a>
-							</li>
-						</ul> -->
-					</nav>
-				<div>
-				shop</div>
-			</div>
-			<div class="header-logo">
-				<img src="img/logo/logo.png">
-			</div>
-			<div class="top-bar-right">
-				<div>bag</div>
-				<div></div>
-			</div>
-		</div>
-		<div class="header-title">
-			<h1>Seamless <span>furniture</span> with natural fabrics</h1>
-			<div class="btn btn-unborder">
-				<a href="#">shop all</a>
-			</div>
-		</div>
-	</header>
+		<div class="header">
+			<div class="top-bar uppercase">
+				<div class="top-bar__left">
+					<div class="menu-btn">
+						<div class="menu-btn__lines"></div>
+					</div>
+					<button class="uppercase">shop</button>
+				</div>
+				<div class="top-bar__logo">
+					<a href="#" class="logo"><img src="img/logo/logo.png" alt="logo"></a>
+         		</div>
+         		<div class="top-bar__right">
+         			<a href="#">bag<button>0</button></a>
+         		</div>
+         	</div>
+         	<nav>
+         		<ul class="menu-items d-flex">
+         			<li><a href="#" class="menu-item jsCloseMenu">Arusa</a>
+         				<ul class="uppercase">
+         					<li><a href="#" class="menu-item jsCloseMenu">Home</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">About</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Blog</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Contact</a></li>
+         				</ul> 
+         			</li>
+         			<li><a href="#" class="menu-item jsCloseMenu">Collections</a>
+         				<ul class="uppercase">
+         					<li><a href="#" class="menu-item jsCloseMenu">Decor</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Furnitures</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Ceramics</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Lamps</a></li>
+         				</ul> 
+         			</li>
+         			<li><a href="#" class="menu-item jsCloseMenu">Shop</a>
+         				<ul class="uppercase">
+         					<li><a href="#" class="menu-item jsCloseMenu">All</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Lookbook</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Collections</a></li>
+         					<li><a href="#" class="menu-item jsCloseMenu">Featured</a></li>
+         				</ul> 
+         			</li>
+         			<li class="bg d-flex">
+         				<a href="#" class="menu-item jsCloseMenu">
+         					<div>
+         						<p>featured product</p>
+         						<h4>Native light chair</h4>
+         					</div>
+         				</a>
+         			</li>
+         		</ul>
+         	</nav>
+         </div>
+         <div class="header-title">
+         	<h1>Seamless <span>furniture</span> with natural fabrics</h1>
+         	<div class="btn btn-unborder">
+         		<a href="#">shop all</a>
+         	</div>
+         </div>
+     </header>
+
+
 	<section class="section__creating bg">
 		<div class="section__creating__container">
 			<div class="section__creating__pic_container">
@@ -74,29 +99,31 @@
 		<div class="future-product__title border">
 			<h4>Enjoy our feature products</h4>
 		</div>
-		<div class="product__container uppercase d-flex">
-			<div class="product-card d-flex">
+
+		<div class="slider uppercase">
+
+			<div class="slider__item d-flex">
 				<img src="img/product/Rectangle543.jpg" alt="towel">
 				<div class="product-info d-flex justify-between">
 					<div class="name">native iron chair</div>
 					<div class="price">$4,990</div>
 				</div>
 			</div>
-			<div class="product-card d-flex">
+			<div class="slider__item d-flex">
 				<img src="img/product/Rectangle543-2.jpg" alt="lamp">
 				<div class="product-info d-flex justify-between">
 					<div class="name">centure dashe</div>
 					<div class="price">$1,799</div>
 				</div>
 			</div>
-			<div class="product-card d-flex">
+			<div class="slider__item d-flex">
 				<img src="img/product/Rectangle543-3.jpg" alt="chair">
 				<div class="product-info d-flex justify-between">
 					<div class="name">native light chair</div>
 					<div class="price">$4,990</div>
 				</div>
 			</div>
-			<div class="product-card d-flex">
+			<div class="slider__item d-flex">
 				<img src="img/product/Rectangle543-4.jpg" alt="pillow">
 				<div class="product-info d-flex justify-between">
 					<div class="name">paola wood lamp</div>
@@ -104,6 +131,8 @@
 				</div>
 			</div>
 		</div>
+
+
 		<div class="future-product__btn uppercase border">
 			<a href="#">shop all</a>
 		</div>
@@ -126,17 +155,17 @@
 
 	<section class="pic_container bg">
 		<div class="pic_container_item1">
-			<img src="img/pic_container/Rectangle 543.png">
+			<img src="img/pic_container/Rectangle-543.png" alt="vase">
 			<div class="product-info d-flex justify-between">
-				<div class="name">paola wood lamp</div>
-				<div class="price">$5,990</div>
+				<div class="name uppercase">iglenix vase</div>
+				<div class="price">$2,299</div>
 			</div>
 		</div>
 		<div class="pic_container_item2">
-			<img src="img/pic_container/Rectangle 543-2.png">
+			<img src="img/pic_container/Rectangle-543-2.png" alt="lamp">
 			<div class="product-info d-flex justify-between">
-				<div class="name">paola wood lamp</div>
-				<div class="price">$5,990</div>
+				<div class="name uppercase">atajux lamp</div>
+				<div class="price">$2,399</div>
 			</div>
 		</div>
 	</section>
@@ -171,7 +200,7 @@
 				</div>
 				<div>
 					<div class="lookbook__img_container d-flex">
-						<img src="img/img_lookbook/lookbook.jpg">
+						<img src="img/img_lookbook/lookbook.jpg" alt="lookbook">
 						<div class="d-flex justify-between">
 							<a href="#">see lookbook</a>
 							<a href="#">shop all</a>
@@ -280,7 +309,7 @@
 			<h4>Enjoy our articles</h4>
 		</div>
 		<article class="article_container__main d-flex">
-			<img class="article-main__img" src="img/img_articles/Rectangle 554.png">
+			<img class="article-main__img" src="img/img_articles/Rectangle-554.png" alt="chairs">
 			<div class="article-main">
 				<h3>Manhattan Pià-terre for a new Chicago apartment</h3>
 				<p>Interior designer Sarah Vaile remembers eyeing a New York City apartment—one with bold colors and a personality as distinct as its chic owner—in a 2014 issue of House Beautiful, and tucking it away for future design inspiration. Years later, in a serendipitous turn of events, the woman she’d seen in the magazine—a stylish figure now in her 30s—just moved to Chicago.</p>
@@ -295,19 +324,19 @@
 		</div>
 		<div class="article_container d-flex">
 			<article class="d-flex">
-				<img src="img/img_articles/Rectangle 554-2.png">
+				<img src="img/img_articles/Rectangle-554-2.png" alt="bedroom">
 				<h5>Inside a playful, bohemian beach house on Martha's Vineyard</h5>
 				<p>I would follow Jessica to the end of the Earth,” Johanna Hynes says, referring to her designer, Jessica Stambaugh. The Nashville-based principal of JS Interiors designed Hynes’ Boston wellness studio, Asana Charlestown, her family’s townhouse—and most recently, their beach chalet in Katama on Martha’s Vineyard.</p>
 				<a class="article_link" href="#">READ ARTICLE</a>
 			</article>
 			<article class="d-flex">
-				<img src="img/img_articles/Rectangle 554-3.png">
+				<img src="img/img_articles/Rectangle-554-3.png" alt="lamp">
 				<h5>Modern Texas home is beautiful and completely kid-friendly</h5>
 				<p>I would follow Jessica to the end of the Earth,” Johanna Hynes says, referring to her designer, Jessica Stambaugh. The Nashville-based principal of JS Interiors designed Hynes’ Boston wellness studio, Asana Charlestown, her family’s townhouse—and most recently, their beach chalet in Katama on Martha’s Vineyard.</p>
 				<a class="article_link" href="#">READ ARTICLE</a>
 			</article>
 			<article class="d-flex">
-				<img src="img/img_articles/Rectangle 554-4.png">
+				<img src="img/img_articles/Rectangle-554-4.png" alt="sofa">
 				<h5>Tudor-style home in Chicago's North Shore is chock-full</h5>
 				<p>I would follow Jessica to the end of the Earth,” Johanna Hynes says, referring to her designer, Jessica Stambaugh. The Nashville-based principal of JS Interiors designed Hynes’ Boston wellness studio, Asana Charlestown, her family’s townhouse—and most recently, their beach chalet in Katama on Martha’s Vineyard.</p>
 				<a class="article_link" href="#">READ ARTICLE</a>
@@ -365,10 +394,14 @@
 			</div>
 		</div>
 		<div class="footer__logo">
-			<img src="img/logo/logo.png">
+			<img src="img/logo/logo.png" alt="logo">
 		</div>
 		<div class="footer__copyright border">© ARUSA 2022 | AGATHA SAKOWICZ</div>
 	</footer>
 
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
