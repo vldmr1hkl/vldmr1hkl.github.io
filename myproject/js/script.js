@@ -1,81 +1,112 @@
-const menuBtn = document.querySelector(".menu-btn");
-const menuItems = document.querySelectorAll(".jsCloseMenu");
-const expandBtn = document.querySelectorAll(".expand-btn");
+document.addEventListener('DOMContentLoaded', () => {
+	console.log('DOM loaded')
 
-// humburger toggle
-menuBtn.addEventListener("click", () => {
-  //menuBtn.classList.toggle("open");
-  
-  document.body.classList.toggle('openedMenu')
-  //menuItems.classList.toggle("open");
-});
+	const menuBtn = document.querySelector(".menu-btn");
+	const menuItems = document.querySelectorAll(".jsCloseMenu");
+	const expandBtn = document.querySelectorAll(".expand-btn");
 
-// // mobile menu expand
-// expandBtn.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     btn.classList.toggle("open");
-//   });
-// });
+	menuBtn.addEventListener("click", () => {
+		document.body.classList.toggle('openedMenu');
+	});
 
-
-menuItems.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    document.body.classList.remove('openedMenu')
+	menuItems.forEach((btn) => {
+  	btn.addEventListener("click", (e) => {
+    	document.body.classList.remove('openedMenu')
+    });
   });
-});
+
+async function populate() {
+		const requestURL = 'https://vldmr1hkl.github.io/homework/product-card.json'
+		const request = new Request(requestURL)
+
+		const response = await fetch(request)
+		const productCards = await response.json()
+
+		console.log(productCards)
+
+		populateCard(productCards)
+	}
 
 
+	function populateCard(obj) {
+		const myDiv = document.createElement('div')
+		myDiv.classList.add('slider__item', 'd-flex')
+
+		const cards = obj.productCards
+
+		console.log(cards)
 
 
+		for(const card of cards) {
+
+			console.log(card)
+
+			const myDiv = document.createElement('div')
+			myDiv.classList.add('slider__item', 'd-flex')
+
+			const myImg = document.createElement('img')
+
+			const divProductInfo = document.createElement('div')
+			divProductInfo.classList.add('product-info', 'd-flex', 'justify-between')
+
+			const divName = document.createElement('div')
+			divName.classList.add('name')
+
+			const divPrice = document.createElement('div')
+			divPrice.classList.add('price')
 
 
-$(document).ready(function(){
-	$('.slider').slick({
-		arrows: true,
-		dots: true,
-		adaptiveHeight: true,
-		slidesToShow: 2,
-		// slidesToScroll:1,
-		speed: 1000,
-		// infinite: true,
-		// initialSlide: 0,
-		autoplay: true,
-		autoplaySpeed: 1500,
-		// pauseOnFocus: true,
-		// pauseOnHover: true,
-		// pauseOnDotsHover: true,
-		draggable: false,
-		swipe: true,
-		touchThreshold: 10,
-		touchMove: true,
-		waitForAnimate: false,
-		// швидко перелистуються слайди
-		centerMode: true,
-		variableWidth: true,
-		// rows: 2,
-		// slidesPerRow: 2,
-		// vertical: false,
-		// verticalSwiping: true,
-		// fade: true,
-		// asNavFor: ".sliderbig",
-		// звязати два слайдера з одинаковою кількістю слайдів,
-		responsive:[
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
+			divName.textContent = card.name
+			divPrice.textContent = `${card.price}$`
+			myImg.src  = card.img
+
+			myDiv.appendChild(myImg)
+			myDiv.appendChild(divProductInfo)
+			divProductInfo.appendChild(divName)
+			divProductInfo.appendChild(divPrice)
+			
+
+			document.getElementById('product-card-slider').appendChild(myDiv)
+
+		
+
+
+		}
+		$(document).ready(function(){
+			$('.slider').slick({
+				rows: 2,
 				arrows: false,
 				dots: false,
-			}
-		}],
-		mobileFirst: false,
-		// appendArrows: $(".content"),
-		// appendDots: $(".content"),
-		// перемістити в іншій div
-
+				adaptiveHeight: true,
+				slidesToShow: 2,
+				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				draggable: false,
+				swipe: true,
+				touchThreshold: 10,
+				touchMove: true,
+				waitForAnimate: false,
+				// centerMode: true,
+				variableWidth: false,
+				responsive:[{
+				breakpoint: 768,
+				settings: {
+					
+					rows: 1,
+					// slidesToShow: 1,
+					arrows: true,
+					dots: true,
+					variableWidth: true,
+				}
+			}],
+			mobileFirst: true,
+		});
 	});
-	// $('.slider')on('beforeChange', function(event, slick, currentSlide, nextSide){
 
-	// })
+		
+	}
 
-});
+
+	populate()
+})
