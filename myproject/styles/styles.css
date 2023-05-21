@@ -221,17 +221,30 @@ button{
 	width: 25%;
 }
 .fade-in{
-	animation:fade-in 2s cubic-bezier(.9,.575,.565,1.000) both
+	animation:fade-in 2s cubic-bezier(.9,.575,.565,1.000) both;
 }
 .slide-out{
 	animation:slide-out 0.8s cubic-bezier(.755,.05,.855,.06) both;
 	animation-delay: 2.5s;
 }
 @keyframes fade-in{
-	0%{opacity:0}
-	100%{opacity:1}
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
 }
-@keyframes slide-out{0%{transform:translateX(0);opacity:1}100%{transform:translateX(-2000px);opacity:0}}
+@keyframes slide-out{
+	0%{
+		transform:translateX(0);
+		opacity:1;
+	}
+	100%{
+		transform:translateX(-2000px);
+		opacity:0;
+	}
+}
 
 
 .header {
