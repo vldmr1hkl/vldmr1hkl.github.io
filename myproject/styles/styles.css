@@ -417,13 +417,15 @@ h1{
 .section__creating {
   min-height: 100vh;
   align-items: center;
-/*  min-height: 1084px;*/
+  height: 1084px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
 }
 
 .section__creating__title{
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 10px 10px 171px 56px rgba(255,255,255,0.94);
 	text-align: center;
 	padding-bottom: 20px;
 	max-width: 548px;
@@ -541,13 +543,16 @@ h1{
 
 @media (max-width: 767.98px) {
 	.section__creating__circle {
-		width: 600px;
-		height: 600px;
-		top: 39%;
+		width: 500px;
+		height: 500px;
+		top: 43%;
 	}
 	.icon-block img {
 		margin: 0px auto;
 		width: 60%;
+	}
+	.icon-block:nth-child(6) {
+		width: 64%;
 	}
 
 	
