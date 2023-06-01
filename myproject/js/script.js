@@ -75,8 +75,10 @@ async function populate() {
 		$(document).ready(function(){
 			$('.slider').slick({
 				rows: 2,
+				dots: true,
+				variableWidth: true,
 				arrows: false,
-				dots: false,
+				dots: true,
 				adaptiveHeight: true,
 				slidesToShow: 2,
 				speed: 1000,
@@ -87,17 +89,18 @@ async function populate() {
 				touchThreshold: 10,
 				touchMove: true,
 				waitForAnimate: false,
-				// centerMode: true,
+				centerMode: false,
 				variableWidth: false,
 				responsive:[{
 				breakpoint: 768,
 				settings: {
-					
+
 					rows: 1,
-					// slidesToShow: 1,
+					slidesToShow: 4,
 					arrows: true,
 					dots: true,
 					variableWidth: true,
+					centerMode: true,
 				}
 			}],
 			mobileFirst: true,
