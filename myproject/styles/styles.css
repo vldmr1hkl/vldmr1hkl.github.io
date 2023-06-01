@@ -142,6 +142,10 @@ button{
 	color: black;
 	text-transform: uppercase;
 	border-radius: 8px;
+	transition: all .2s ease-in-out;
+}
+.btn:hover{
+	transform: scale(1.1);
 }
 .btn-border{
 	border: 1px solid #DFDEDB;
@@ -196,9 +200,13 @@ button{
 
 
 /*--HEADER--*/
+
 .logo_wlp{
 	height: 100vh;
+/*	left: 0;
+	top: 0;*/
 	width: 100%;
+	height: 100%;
 	position: absolute;
 	z-index: 10;
 	background-color: #384353;
@@ -215,38 +223,34 @@ button{
 }
 
 .logo_wlp img{
-	width: 50%;
+	width: 25%;
 }
 .logo_wlp img:first-child{
 	width: 25%;
 }
 .fade-in{
-	animation:fade-in 2s cubic-bezier(.9,.575,.565,1.000) both;
+	animation:fade-in 2s cubic-bezier(.9,.575,.565,1.000) both
 }
 .slide-out{
 	animation:slide-out 0.8s cubic-bezier(.755,.05,.855,.06) both;
 	animation-delay: 2.5s;
 }
 @keyframes fade-in{
-	0%{
-		opacity:0;
-	}
-	100%{
-		opacity:1;
-	}
+	0%{opacity:0}
+	100%{opacity:1}
 }
-@keyframes slide-out{
-	0%{
-		transform:translateX(0);
-		opacity:1;
-	}
-	100%{
-		transform:translateX(-2000px);
-		opacity:0;
-	}
-}
+@keyframes slide-out{0%{transform:translateX(0);opacity:1}100%{transform:translateX(-2000px);opacity:0}}
 
 
+@media (min-width: 767.98px){
+	.logo_wlp img{
+		width: 15%;
+	}
+	.logo_wlp img:first-child{
+		width: 15%;
+	}
+
+}
 .header {
   position: relative;
   width: 100%;
@@ -547,26 +551,6 @@ h1{
 }
 
 
-/* keyframe animation */
-
-/*@keyframes Rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes Rotate-reverse {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}*/
-
 @keyframes circle-rotate {
   from {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -592,6 +576,9 @@ h1{
 
 
 @media (max-width: 767.98px) {
+	.section__creating{
+		height: 800px;
+	}
 	.section__creating__circle {
 		width: 500px;
 		height: 500px;
@@ -608,12 +595,7 @@ h1{
 	
 }
 
-@media (max-width: 991.98px) { ... }
 
-@media (min-width: 1199.98px) {
-}
-
-@media (max-width: 1399.98px) { ... }
 
 
 /*--SECTION FUTURE PRUDUCT--*/
@@ -653,7 +635,7 @@ h1{
 /*Стрілки*/
 .slick-arrow{
 	opacity: 0.2;
-	margin-top: -25px;
+	margin: -25px 25px 0;
 	border: none;
 	height: 50px;
 	width: 50px;
@@ -661,7 +643,12 @@ h1{
 	z-index: 5;
 	top: 50%;
 	position: absolute;
+	transition: all .2s ease-in-out;
 }
+.slick-arrow:hover{
+	transform: scale(1.4);
+}
+
 /*стрілка вліво*/
 .slick-arrow.slick-prev{
 	background: url('../img/slider-arrow/previous.png') 0 0 / 100% no-repeat;
@@ -683,7 +670,7 @@ h1{
 	display: flex;
 }
 .slick-dots li{
-	margin: 0 10px;
+	margin: 0 15px;
 	list-style: none;
 }
 .slick-dots button{
@@ -692,11 +679,11 @@ h1{
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background-color: black;
+	background-color: #DFDEDB;
 }
 .slick-dots li.slick-active button{
 	background: transparent;
-	border: 1px solid black;
+	border: 1px solid #DFDEDB;
 }
 
 
@@ -714,6 +701,7 @@ h1{
 	width: 50%;
 	flex-direction: column;
 }
+
 .product-card:nth-child(even){
 	border-left: 1px solid #DFDEDB;
 }
@@ -832,6 +820,7 @@ h1{
 	color: white;
 	background-color: #384353;
 	justify-content: space-between;
+	padding-top: 2rem;
 	flex-direction: column;
 }
 .lookbook_hide{
@@ -875,9 +864,12 @@ h1{
 	border-bottom: 1px solid #DFDEDB;
 }
 
-@media (max-width: 575.98px) { ... }
+
 
 @media (min-width: 767.98px) {
+	.section__lookbook{
+		padding-top: 0;
+	}
 	.lookbook__title{
 		flex-direction: column;
 		justify-content: space-between;
@@ -915,12 +907,6 @@ h1{
 	}
 	
 }
-
-@media (max-width: 991.98px) { ... }
-
-@media (max-width: 1199.98px) { ... }
-
-@media (max-width: 1399.98px) { ... }
 
 /*--SECTION FUTURE PRUDUCT DARK--*/
 
@@ -1187,7 +1173,7 @@ footer{
 .wrapper{
 	background-image: url('../img/pic_container/Rectangle-546.png');
 	color: white;
-	height: 760px;	
+	height: 100vh;	
 	flex-direction: column;
 	align-items: center;
 }
@@ -1200,6 +1186,7 @@ footer{
 }
 
 .error-msg h5{
+	margin-top: 10rem;
 	color: #384353;
 	z-index: 7;
 }
@@ -1208,7 +1195,11 @@ footer{
 	position: relative;
 	margin-top: 4rem;
 	z-index: 0;
-
+}
+.error-msg div.btn{
+	background-color:#384353 ;
+	color: white;
+	margin-top: 2rem;
 }
 
 .error-msg::before{
@@ -1216,14 +1207,20 @@ footer{
 	color: rgba(255, 255, 255, 0.5);
 	display: block;
 	position: absolute;
+	left: 0;
+	right: 0;
 	font-weight: bold;
-	font-size: 15rem;
+	font-size: 12rem;
 	z-index: 5;
 }
 
 @media (max-width: 767.98px) {
 	.error-msg::before{
-		font-size: 7rem;
+		font-size: 8rem;
+	}
+	.error-msg{
+		margin-top: 8rem;
+
 	}
 
 }
