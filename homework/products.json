@@ -1,0 +1,118 @@
+{
+    "services":[
+        {
+            "image" : "services/image-1-services.jpeg",
+            "name": "Architectural Design",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "id": "1"
+        },
+        {
+            "image": "services/image-2-services.jpeg",
+            "name": "Interior Design",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "id": "2"
+        },
+        {
+            "image": "services/image-3-services.jpeg",
+            "name": "Space Planning",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "id": "3"
+        },
+        {
+            "image": "services/image-4-services.jpeg",
+            "name": "Decoration",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "id": "4"
+        },
+        {
+            "image": "services/image-5-services.jpeg",
+            "name": "Exterior Design",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "id": "5"
+        },
+        {
+            "image": "services/image-6-services.jpeg",
+            "name": "Construction",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "id": "6"
+        }
+    ],
+    "portfolios":[
+        {
+            "image": "portfolio/porfolio-1.jpeg",
+            "name": "House architecture design in Manhattan, New York",
+            "description": "New York, NY - June 23, 2021",
+            "id": "1"
+        },
+        {
+            "image": "portfolio/porfolio-2.jpeg",
+            "name": "Interior design in Brooklyn, New York",
+            "description": "New York, NY - June 23, 2021",
+            "id": "2"
+        },
+        {
+            "image": "portfolio/porfolio-3.jpeg",
+            "name": "Offices architecture design in Chelsea, New York",
+            "description": "New York, NY - June 23, 2021",
+            "id": "3"
+        },
+        {
+            "image": "portfolio/porfolio-4.jpeg",
+            "name": "Building design in Manhattan, New York",
+            "description": "New York, NY - June 23, 2021",
+            "id": "4"
+        }
+    ],
+    "products":[
+        {
+            "image": "shop/shop-img-1.jpeg",
+            "name": "Architectural Design",
+            "priceMonthly": 2699.00,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "explanation": "Risus ultricies tristique nulla aliquet enim tortor at orttitor eget dolor morbi non arcu risus quis ac turpis egestas sed tempus emper viverra nam libero justo.",
+            "id" : 1
+        },
+        {
+            "image": "shop/shop-img-2.jpeg",
+            "name" : "Interior Design",
+            "priceMonthly": 699.00,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "explanation": "Risus ultricies tristique nulla aliquet enim tortor at orttitor eget dolor morbi non arcu risus quis ac turpis egestas sed tempus emper viverra nam libero justo.",
+            "id" : 2
+        },
+        {
+            "image" : "shop/shop-img-3.jpeg",
+            "name" : "Exterior Design",
+            "priceMonthly": 1699.00,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "explanation": "Risus ultricies tristique nulla aliquet enim tortor at orttitor eget dolor morbi non arcu risus quis ac turpis egestas sed tempus emper viverra nam libero justo.",
+            "id" : 3
+        },
+        {
+            "image" : "shop/shop-img-2.jpeg",
+            "name" : "Interior Design",
+            "priceMonthly": 699.00,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "explanation": "Risus ultricies tristique nulla aliquet enim tortor at orttitor eget dolor morbi non arcu risus quis ac turpis egestas sed tempus emper viverra nam libero justo.",
+            "id" : 4
+        },
+        {
+            "image" : "shop/shop-img-3.jpeg",
+            "name" : "Exterior Design",
+            "priceMonthly": 1699,
+            "priceYearly": 7.999,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "explanation": "Risus ultricies tristique nulla aliquet enim tortor at orttitor eget dolor morbi non arcu risus quis ac turpis egestas sed tempus emper viverra nam libero justo.",
+            "id" : 5
+        },
+        {
+            "image" : "shop/shop-img-2.jpeg",
+            "name" : "Architecture plans",
+            "priceMonthly": 2699.00,
+            "priceYearly": 7.999,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "explanation": "Risus ultricies tristique nulla aliquet enim tortor at orttitor eget dolor morbi non arcu risus quis ac turpis egestas sed tempus emper viverra nam libero justo.",
+            "id" : 6
+        }
+    ]
+}
